@@ -3,8 +3,13 @@ import api from './api.methods';
 import * as types from './types';
 import * as action from './actions';
 
-export default function* saga() {
-    yield all([
+function* loadCharactersSaga() {
+    const response = yield call(api.getCharacters);
+    if (response?.status === 200) {
+        yield put(action.loadedCharacters(response?.data));
+    }
+}
 
-    ]);
+export default function* saga() {
+    yield all([takeLatest(types.LOAD_CHARACTERS, loadCharactersSaga)]);
 }
