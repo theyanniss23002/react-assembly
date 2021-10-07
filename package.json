@@ -36,8 +36,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix",
     "test-ui": "cypress open --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false",
-    "test": "./node_modules/.bin/cypress run --browser chrome --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false"
+    "test": "./node_modules/.bin/cypress run --browser chrome --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false",
   },
   "browserslist": {
     "production": [
@@ -80,9 +82,7 @@
     }
   },
   "lint-staged": {
-    "*.(js,jsx,ts,tsx)": [
-      "eslint",
-      "eslint --fix",
+    "*.(js|jsx|ts|tsx)": [
       "npm run lint:write",
       "git add"
     ]
