@@ -39,7 +39,7 @@
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
     "test-ui": "cypress open --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false",
-    "test": "./node_modules/.bin/cypress run --browser chrome --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false",
+    "test": "./node_modules/.bin/cypress run --browser chrome --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false"
   },
   "browserslist": {
     "production": [
@@ -70,7 +70,6 @@
     "eslint-plugin-cypress": "^2.12.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.2",
     "path": "^0.12.7",
     "sass": "^1.40.1",
     "style-loader": "^3.3.0",
