@@ -75,13 +75,5 @@
     "sass": "^1.40.1",
     "style-loader": "^3.3.0",
     "ts-loader": "^9.2.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "yarn run lint"
   }
 }
