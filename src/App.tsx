@@ -4,7 +4,7 @@ import ruLocale from 'date-fns/locale/ru';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import Directory from './components/Directory';
+import './styles/common.scss';
 
 const theme = createTheme({
     palette: {
@@ -19,7 +19,9 @@ const App = () => {
     return (
         <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ruLocale}>
             <ThemeProvider theme={theme}>
-                <div>Hello</div>
+                <div className='wrap'>
+                    <span>REACT ASSEMBLY</span>
+                </div>
             </ThemeProvider>
         </MuiPickersUtilsProvider>
     );

@@ -8,6 +8,7 @@ lazyFeatureLoad((module) => {
     }
 });
 
+// eslint-disable-next-line func-names
 const allSagas = function* () {
     yield all(sagasFromReduxFolder);
 };
