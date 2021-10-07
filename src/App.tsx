@@ -20,6 +20,7 @@ const App = () => {
         <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ruLocale}>
             <ThemeProvider theme={theme}>
                 <div className='wrap'>
+                    123
                     <span>REACT ASSEMBLY</span>
                 </div>
             </ThemeProvider>
