@@ -36,7 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint --debug src/",
+    "pre-commit-fix": "eslint --debug src/ --fix",
     "lint:write": "eslint --debug src/ --fix",
     "test-ui": "cypress open --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false",
     "test": "./node_modules/.bin/cypress run --browser chrome --config integrationFolder=src,testFiles=**/*.component.spec.tsx,video=false"
