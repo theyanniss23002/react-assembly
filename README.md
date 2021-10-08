@@ -49,13 +49,14 @@
 
 ### In this project, the following stack was used:
 
--   typescript
--   eslint
--   husky
--   prettier
--   babel
--   react
--   firebase
--   cypress
--   middleware: sagas
--   state management: redux
+- typescript
+- eslint
+- husky
+- prettier
+- babel
+- react
+- firebase
+- cypress
+- middleware: sagas
+- state management: redux
+- material-ui@v5
