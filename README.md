@@ -41,7 +41,7 @@
 - Set up automatic builds and deploys with GitHub `yes`.
 - Specify nickname and repository in `<nickname/repo>` format.
 - Set up the workflow to run a build script before every deploy `yes`
-- What script should be run before every deploy `yarn && yarn build`.
+- What script should be run before every deploy `yarn && yarn build && firebase deploy`.
 - Set up automatic deployment to your site's live channel when a PR is merged `yes`.
 - Write name your main branch.
 
