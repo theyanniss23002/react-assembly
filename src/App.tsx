@@ -1,10 +1,10 @@
 import React from 'react';
-import DateFnsUtils from '@date-io/date-fns';
 import ruLocale from 'date-fns/locale/ru';
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { createTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/styles';
 import './styles/common.scss';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
 
 const theme = createTheme({
     palette: {
@@ -17,13 +17,13 @@ const theme = createTheme({
 
 const App = () => {
     return (
-        <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ruLocale}>
+        <LocalizationProvider dateAdapter={AdapterDateFns} locale={ruLocale}>
             <ThemeProvider theme={theme}>
                 <div className='wrap'>
                     <span>REACT ASSEMBLY</span>
                 </div>
             </ThemeProvider>
-        </MuiPickersUtilsProvider>
+        </LocalizationProvider>
     );
 };
 

@@ -4,7 +4,7 @@ import App from './App';
 import './styles/common.scss';
 import { Provider, ReactReduxContext } from 'react-redux';
 import { store } from './store';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 
 render(
     <Provider store={store} context={ReactReduxContext}>
