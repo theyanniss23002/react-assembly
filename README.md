@@ -1,5 +1,6 @@
 # Getting Started Snake Game in React
 
+
 ### In the project directory, you can install node_modules: `yarn`
 
 ### To configure esLint and Prettier go to your IDE settings and enable the corresponding options:
