@@ -85,8 +85,7 @@
             "pretty-quick --staged",
             "prettier --write",
             "eslint --fix",
-            "eslint",
-            "git add"
+            "eslint"
         ]
     }
 }
