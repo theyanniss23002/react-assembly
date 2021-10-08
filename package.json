@@ -79,6 +79,7 @@
         "*.{js,jsx,ts,tsx,json,css,scss,md}": [
             "eslint",
             "pretty-quick --staged",
+            "prettier --write",
             "git add",
             "eslint --fix"
         ]
