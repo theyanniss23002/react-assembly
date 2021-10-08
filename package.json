@@ -81,7 +81,7 @@
         "ts-loader": "^9.2.6"
     },
     "lint-staged": {
-        "*.{js,jsx,ts,tsx,json,md}": [
+        "*.{js,jsx,ts,tsx,json}": [
             "pretty-quick --staged",
             "prettier --write",
             "eslint --fix",
